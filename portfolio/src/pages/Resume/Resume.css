@@ -19,3 +19,14 @@
     left: 5%;
     width: 30%;
 }
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .resume button:hover{
+        background-color: #FFF6D8;
+        border-radius: 10px;
+    }
+    .resume img {
+        width: 30%;
+        margin-left: 2%;
+    }
+}
