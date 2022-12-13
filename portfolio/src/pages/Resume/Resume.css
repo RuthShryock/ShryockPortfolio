@@ -1,0 +1,21 @@
+.resume button {
+    all: unset;
+    cursor: pointer;
+    padding: 2% 7% 2% 7%;
+}
+.resume button:hover{
+    background-color: #FFEFBA;
+    border-radius: 10px;
+}
+.resume a {
+    font-family: 'Times New Roman', Times, serif;
+    color: #AB8860;
+    font-size: 2vw;
+    border: none;
+    text-decoration: none;
+}
+.resume img {
+    top: 0px;
+    left: 5%;
+    width: 30%;
+}
