@@ -19,3 +19,24 @@
     left: 5%;
     width: 30%;
 }
+.dropdown-content a {
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #AB8860;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    padding-left: 0%;
+    transition: all 0.5s ease;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .art button:hover{
+        background-color: #FFF6D8;
+        border-radius: 10px;
+    }
+    .art img {
+        width: 30%;
+        margin-left: 2%;
+    }
+}
