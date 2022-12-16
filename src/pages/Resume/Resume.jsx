@@ -26,6 +26,9 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+            <div className="bodyResume">
+                <object data="/ShryockResume.pdf" type="application/pdf" width="100%" height="100%" aria-label="resume pdf"></object>
+            </div>
         </div>   
     )
 };

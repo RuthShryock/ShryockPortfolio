@@ -19,6 +19,12 @@
     left: 5%;
     width: 30%;
 }
+.bodyResume{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 80vh;
+}
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     .resume button:hover{
@@ -28,5 +34,11 @@
     .resume img {
         width: 30%;
         margin-left: 2%;
+    }
+    .bodyResume{
+        margin-top: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 58vh;
     }
 }
