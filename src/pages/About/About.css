@@ -162,7 +162,7 @@
     #icon{
         font-size: 6vw;
     }
-    .about button:active{
+    .about button:hover{
         background-color: #FFF6D8;
         border-radius: 10px;
     }
