@@ -26,6 +26,34 @@ const Art = () => {
                     </div>
                 </div>
             </div>
+            <div className="bodyArt">
+                <div className="gridArt">
+                    <div className="gridArt-child"><img src="/1.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/2.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/3.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/4.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/5.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/6.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/7.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/8.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/9.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/10.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/11.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/12.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/13.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/14.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/15.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/16.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/17.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/18.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/19.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/20.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/21.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/22.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/23.jpg" alt='cardigan'></img></div>
+                    <div className="gridArt-child"><img src="/24.jpg" alt='cardigan'></img></div>
+                </div>
+            </div>
         </div>   
     )
 };

@@ -38,7 +38,7 @@ const About = () => {
                     <a href='https://www.instagram.com/ruthie_shryock/' target="_blank" rel="noopener noreferrer" id='icon'><FontAwesomeIcon icon={faInstagramSquare}/></a>
                 </div>
                 <div className="body-child2">
-                    <img id="profile" src="me.png" alt="profile"/>
+                    <img id="profile" src="me.jpg" alt="profile"/>
                 </div>
             </div>
         </div>   

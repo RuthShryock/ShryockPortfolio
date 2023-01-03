@@ -29,6 +29,42 @@
     padding-left: 0%;
     transition: all 0.5s ease;
 }
+.bodyArt{
+    border: green solid 2px
+}
+.gridArt{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    border: red solid 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2% 2% 2% 2%;
+}
+.gridArt-child{
+    /* display: flex;
+    cursor: pointer;
+	overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+	width: 19vw;
+	height: 17vw;*/
+    padding: 4% 4% 4% 4%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 20vw;
+    height: 20vw;
+}
+.gridArt-child  img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transition: transform 500ms ease;
+}
+.gridArt-child img:hover{
+    transform: scale(1.1);
+}
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     .art button:hover{
