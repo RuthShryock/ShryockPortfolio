@@ -28,30 +28,126 @@ const Art = () => {
             </div>
             <div className="bodyArt">
                 <div className="gridArt">
-                    <div className="gridArt-child"><img src="/1.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/2.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/3.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/4.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/5.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/6.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/7.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/8.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/9.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/10.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/11.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/12.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/13.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/14.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/15.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/16.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/17.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/18.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/19.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/20.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/21.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/22.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/23.jpg" alt='cardigan'></img></div>
-                    <div className="gridArt-child"><img src="/24.jpg" alt='cardigan'></img></div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/1.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/2.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/3.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/5.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/6.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/4.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/7.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/8.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/9.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/10.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/11.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/12.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/13.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/14.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/15.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/16.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/17.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/18.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/19.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/20.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/21.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/22.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/23.jpg")` 
+                        }}></div>
+                    </div>
+                    <div className="outerChild">
+                        <div className="gridArt-child" style={{ 
+                            backgroundImage: `url("/24.jpg")` 
+                        }}></div>
+                    </div>
                 </div>
             </div>
         </div>   
