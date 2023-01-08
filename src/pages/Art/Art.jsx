@@ -1,9 +1,31 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+// import {Modal, Box} from '@mui/material';
+import React, {useState} from 'react';
 import './Art.css';
 
 const Art = () => {
+    // const [openModal, setOpenModal] = useState();
+    // const [id, setId] = useState();
+
+    // const setSrc = () => {
+    //     console.log(id);
+    //     var stringMe = `/${id}.jpg`;
+    //     document.getElementById("modalImage").src = stringMe;
+    //     console.log(stringMe);
+    // }
+
+    // const style = {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     left: '50%',
+    //     transform: 'translate(-50%, -50%)',
+    //     width: '80vw',
+    //     height: '40vw',
+    //     bgcolor: '#FFF6D8',
+    //     color: 'white',
+    //     p: 4,
+    //   };
     return (
         <div className="art">
              <div className="top-bar">
@@ -27,12 +49,25 @@ const Art = () => {
                 </div>
             </div>
             <div className="bodyArt">
+                <h2>some of my hobbies</h2>
                 <div className="gridArt">
-                    <div className="outerChild">
+                    <div className="outerChild" >
                         <div className="gridArt-child" style={{ 
                             backgroundImage: `url("/1.jpg")` 
                         }}></div>
                     </div>
+                    {/* 
+                    onMouseEnter={() => {setId(1); setSrc()}} onClick={() => {setOpenModal(true)}}
+                    <Modal
+                        open={openModal === true}
+                        onClose={() => setOpenModal(false)}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                      >
+                        <Box sx={style}>
+                          <img id="modalImage" src='null' alt="cardigan"></img>
+                        </Box>
+                      </Modal> */}
                     <div className="outerChild">
                         <div className="gridArt-child" style={{ 
                             backgroundImage: `url("/2.jpg")` 

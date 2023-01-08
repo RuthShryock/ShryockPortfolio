@@ -19,6 +19,13 @@
     left: 5%;
     width: 30%;
 }
+.art h2{
+    font-family: "Parisienne";
+    font-size: 3vw;
+    color: #AB8860;
+    text-align: center;
+    margin-top: -1%;
+}
 .dropdown-content a {
     font-size: 5vw;
     font-family: 'Times New Roman', Times, serif;
@@ -41,6 +48,7 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 10%;
+    cursor: pointer;
 }
 .gridArt-child{
     width: 100%;
@@ -53,6 +61,12 @@
 .gridArt-child:hover{
     transform: scale(1.2);
 }
+/* #modalImage{
+    width: 40vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+} */
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     .art button:hover{
@@ -75,5 +89,10 @@
         overflow: hidden;
         position: relative;
         margin-bottom: 20%;
+    }
+    .art h2{
+        font-size: 6vw;
+        margin-bottom: 12%;
+        margin-top: 4%;
     }
 }
