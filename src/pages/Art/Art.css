@@ -61,12 +61,40 @@
 .gridArt-child:hover{
     transform: scale(1.2);
 }
-/* #modalImage{
-    width: 40vw;
+.modalBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 82%;
+    background-color: #FFEFBA;
+    padding: 2%;
+}
+#modalImage{
+    width: 35%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-} */
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    padding: 0% 10% 5% 10%;
+}
+.description {
+    text-align: center;
+    margin-top: -3.6%;
+    color: #AB8860;
+    font-size: 2.25vw;
+    font-family: "Parisienne";
+}
+.xmark{
+    font-size: 2.5vw;
+    color: #AB8860;
+    background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: inherit;
+}
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     .art button:hover{
@@ -94,5 +122,17 @@
         font-size: 6vw;
         margin-bottom: 12%;
         margin-top: 4%;
+    }
+    #modalImage{
+        width: 75%;
+        padding: 15% 15% 15% 15%;
+    }
+    .description {
+        margin-top: -3.6%;
+        font-size: 6vw;
+    }
+    .xmark{
+        font-size: 5.5vw;
+        padding: 5% 5% 5% 5%;
     }
 }

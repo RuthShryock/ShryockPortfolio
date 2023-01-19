@@ -1,31 +1,127 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-// import {Modal, Box} from '@mui/material'; , {useState} 
-import React from 'react';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import {Modal, Box} from '@mui/material'; 
+import React, {useState} from 'react';
 import './Art.css';
 
 const Art = () => {
-    // const [openModal, setOpenModal] = useState();
-    // const [id, setId] = useState();
+    const artImages = [{
+        photo: "/1.jpg",
+        text:"forest green shrug crochet cardigan"
+    },
+    {
+        photo: "/2.jpg",
+        text:"classic long grey crochet cardigan"
+    },
+    {
+        photo: "/25.jpg",
+        text: "mint and cream cropped crochet cardigan"
+    },
+    {
+        photo: "/3.jpg",
+        text: "colorful grany square crochet cardigan"
+    },
+    {
+        photo: "/6.jpg",
+        text: "heather blue crochet pompeii button cardigan"
+    },
+    {
+        photo: "/5.jpg",
+        text: "light pink summer crochet cardigan"
+    },
+    {
+        photo: "/4.jpg",
+        text: "vladimir the fox - amigrumi doll"
+    },
+    {
+        photo: "/7.jpg",
+        text: "grace the kitten - amigrumi doll"
+    },
+    {
+        photo: "/8.jpg",
+        text: "oliver the bear - amigrumi doll"
+    },
+    {
+        photo: "/9.jpg",
+        text: "happy veggies - amigrumi food"
+    },
+    {
+        photo: "/10.jpg",
+        text: "the sister bunnies - amigrumi dolls"
+    },
+    {
+        photo: "/27.jpg",
+        text: "emma the elephant - amigrumi doll"
+    },
+    {
+        photo: "/11.jpg",
+        text: "burger, hot dog, and blt - amigrumi food"
+    },
+    {
+        photo: "/28.jpg",
+        text: "friends forever - amigrumi dolls"
+    },
+    {
+        photo: "/12.jpg",
+        text: "vegan and gluten free chocolate banana muffins"
+    },
+    {
+        photo: "/13.jpg",
+        text: "vegan red velvet cake with fresh strawberries and blueberries"
+    },
+    {
+        photo: "/14.jpg",
+        text: "lemon bundt cake"
+    },
+    {
+        photo: "/15.jpg",
+        text: "vegan lemon cake with fresh raspberries"
+    },
+    {
+        photo: "/16.jpg",
+        text: "vegan lemon cake"
+    },
+    {
+        photo: "/17.jpg",
+        text: "vegan strawberry lemon cake with fresh raspberries and strawberries"
+    },
+    {
+        photo: "/18.jpg",
+        text: "vegan sugar cookies"
+    },
+    {
+        photo: "/19.jpg",
+        text: "vegan dark chocolate cake"
+    },
+    {
+        photo: "/20.jpg",
+        text: "vegan apple pie"
+    },
+    {
+        photo: "/26.jpg",
+        text: "french quiche with spinach"
+    },
+    {
+        photo: "/21.jpg",
+        text: "vegan chocolate oreo crumble cake"
+    },
+    {
+        photo: "/22.jpg",
+        text: "flower embroidery"
+    },
+    {
+        photo: "/23.jpg",
+        text: "lace crocheted snowflakes"
+    },
+    {
+        photo: "/24.jpg",
+        text: "harvest watercolor painting"
+    }
+    ]
+    const [openModal, setOpenModal] = useState();
+    const [imgsrc, setImagesrc] = useState();
+    const [imgdescp, setImgdescp] = useState();
 
-    // const setSrc = () => {
-    //     console.log(id);
-    //     var stringMe = `/${id}.jpg`;
-    //     document.getElementById("modalImage").src = stringMe;
-    //     console.log(stringMe);
-    // }
-
-    // const style = {
-    //     position: 'absolute',
-    //     top: '50%',
-    //     left: '50%',
-    //     transform: 'translate(-50%, -50%)',
-    //     width: '80vw',
-    //     height: '40vw',
-    //     bgcolor: '#FFF6D8',
-    //     color: 'white',
-    //     p: 4,
-    //   };
     return (
         <div className="art">
              <div className="top-bar">
@@ -51,138 +147,31 @@ const Art = () => {
             <div className="bodyArt">
                 <h2>some of my hobbies</h2>
                 <div className="gridArt">
-                    <div className="outerChild" >
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/1.jpg")` 
-                        }}></div>
-                    </div>
-                    {/* 
-                    onMouseEnter={() => {setId(1); setSrc()}} onClick={() => {setOpenModal(true)}}
+                    {artImages.map((e,i) => 
+                        <div className="outerChild" onClick={() => {setOpenModal(true); setImagesrc(e.photo); setImgdescp(e.text)}} >
+                            <div className="gridArt-child" style={{ 
+                                backgroundImage: `url(${e.photo})` 
+                            }}></div>
+                            
+                        </div>
+                    )}
                     <Modal
                         open={openModal === true}
                         onClose={() => setOpenModal(false)}
+                        disableAutoFocus={true}
                         aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description"
-                      >
-                        <Box sx={style}>
-                          <img id="modalImage" src='null' alt="cardigan"></img>
+                    >
+                        <Box className='modalBox'>
+                        <button className='xmark' onClick={() => setOpenModal(false)}>
+                            <FontAwesomeIcon icon={faXmark}/>
+                        </button>
+                        <img id="modalImage" src={imgsrc} alt={imgdescp}></img>
+                        <h4 className='description'>{imgdescp}</h4>
                         </Box>
-                      </Modal> */}
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/2.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/3.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/5.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/6.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/4.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/7.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/8.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/9.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/10.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/11.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/12.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/13.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/14.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/15.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/16.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/17.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/18.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/19.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/20.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/21.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/22.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/23.jpg")` 
-                        }}></div>
-                    </div>
-                    <div className="outerChild">
-                        <div className="gridArt-child" style={{ 
-                            backgroundImage: `url("/24.jpg")` 
-                        }}></div>
-                    </div>
+                    </Modal>
+                    
+                    
                 </div>
             </div>
         </div>   
