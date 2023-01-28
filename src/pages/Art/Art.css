@@ -63,37 +63,41 @@
 }
 .modalBox{
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    height: 82%;
-    background-color: #FFEFBA;
+    width: 80%;
+    height: 80%;
+    background-color: transparent;
     padding: 2%;
 }
 #modalImage{
-    width: 35%;
+    width: 55%;
     height: auto;
     margin: auto;
     display: block;
     border-radius: 5px;
-    padding: 0% 10% 5% 10%;
-}
-.description {
-    text-align: center;
-    margin-top: -3.6%;
-    color: #AB8860;
-    font-size: 2.25vw;
-    font-family: "Parisienne";
+    padding: -10% 10% 5% 10%;
 }
 .xmark{
     font-size: 2.5vw;
-    color: #AB8860;
+    color: #FFF6D8;
     background: none;
 	border: none;
+    margin-left: 80%;
 	padding: 0;
 	cursor: pointer;
 	outline: inherit;
+}
+@media only screen and (min-height: 1200px) {
+    .modalBox{
+        top: 50%;
+    }  
+}
+@media only screen and (max-width: 1300px) {
+    .modalBox{
+        top: 50%;
+    }  
 }
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -123,16 +127,15 @@
         margin-bottom: 12%;
         margin-top: 4%;
     }
-    #modalImage{
-        width: 75%;
-        padding: 15% 15% 15% 15%;
+    .modalBox{
+        top: 55%;
     }
-    .description {
-        margin-top: -3.6%;
-        font-size: 6vw;
+    #modalImage{
+        width: 90%;
+        padding: 0% 5% 0% 5%;
     }
     .xmark{
         font-size: 5.5vw;
-        padding: 5% 5% 5% 5%;
+        padding: 0% 5% 3% 5%;
     }
 }

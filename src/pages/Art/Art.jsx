@@ -167,11 +167,9 @@ const Art = () => {
                             <FontAwesomeIcon icon={faXmark}/>
                         </button>
                         <img id="modalImage" src={imgsrc} alt={imgdescp}></img>
-                        <h4 className='description'>{imgdescp}</h4>
                         </Box>
                     </Modal>
-                    
-                    
+
                 </div>
             </div>
         </div>   
