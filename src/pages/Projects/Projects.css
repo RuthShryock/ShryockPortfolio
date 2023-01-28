@@ -19,6 +19,29 @@
     left: 5%;
     width: 30%;
 }
+.gridProjects{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    margin-left: 5%;
+    padding: 2% 2% 2% 2%;
+}
+.outerPChild{
+    width: 18vw;
+    height: 18vw;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+.gridProject-child{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: transform 500ms ease;
+}
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     .projects button:hover{
