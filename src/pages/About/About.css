@@ -1,4 +1,4 @@
-.about button {
+/* .about button {
     all: unset;
     cursor: pointer;
     padding: 2% 7% 2% 7%;
@@ -119,10 +119,46 @@
 }
 .dropdown:hover .dropdown-content {
     display: block;
+} */
+
+.about{
+    position: relative;
+}
+
+.lines{
+	align-self: flex-end;
+	position: absolute;
+    width: 15vw;
+    height: auto;
+    border: 2px solid red;
+}
+
+.dots{
+    position: absolute;
+	top: 0;
+	left: 0;
+    width: 15vw;
+    height: auto;
+}
+
+.flowerOne {
+    position: absolute;
+	top: 0;
+	right: 0;
+    width: 15vw;
+    height: auto;
+}
+
+.flowerTwo {
+    position: absolute;
+	left: 0;
+    width: 15vw;
+    height: auto;
+    border: 2px solid red;
 }
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) { 
+/* @media only screen and (max-width: 768px) { 
     .dropbtn{
         display: block;
     }
@@ -166,4 +202,4 @@
         background-color: #FFF6D8;
         border-radius: 10px;
     }
-}
+} */

@@ -1,15 +1,17 @@
-import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+// import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { faBars} from '@fortawesome/free-solid-svg-icons';
+// import Navbar from "../../components/Navbar";
 import React from 'react';
 import './About.css';
+
 
 const About = () => {
     return (
         <div className="about">
-            <div className="top-bar">
+            {/* <div className="top-bar">
                 <div className="logo"><a href='/about'><img src="/logo.png" alt='logo'/></a></div>
                 <div className="grid-container">
                     <div className="grid-child"><button type="button" id="active"><a href="/about">about</a></button></div>
@@ -28,7 +30,8 @@ const About = () => {
                         <a href="/resume">resume</a>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            {/* <Navbar></Navbar>
             <div className="body-grid">
                 <div className="body-child1">
                     <h2>hello, i'm ruth</h2>
@@ -40,7 +43,11 @@ const About = () => {
                 <div className="body-child2">
                     <img id="profile" src="me.jpg" alt="profile"/>
                 </div>
-            </div>
+            </div> */}
+            <img className="lines" src="lines.png" alt="decor"/>
+            <img className="dots" src="dots.png" alt="decor"/>
+            <img className="flowerOne" src="flowers.png" alt="decor"/>
+            <img className="flowerTwo" src="flowers.png" alt="decor"/>
         </div>   
     )
 };

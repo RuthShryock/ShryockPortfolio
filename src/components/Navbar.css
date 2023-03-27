@@ -1,0 +1,126 @@
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 0.8rem 0rem;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    border-radius: 10px;
+  }
+  
+  .brand-name {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 0.8rem;
+  }
+
+  .brand-name img{
+    width: 80px;
+    height: auto;
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+    padding-right: 2rem;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+  }
+  
+  .navigation-menu li a {
+    font-size: 2vw;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #AB8860;
+    display: block;
+    width: 100%;
+  }
+
+  .navigation-menu li a:hover {
+    color: #d7a976;
+  } 
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hamburger {
+      display: block;
+      border: 0;
+      height: 40px;
+      width: 40px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: #AB8860;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      color: #FFF6D8;
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      font-size: 7vw;
+    }
+
+    .hamburger:hover {
+      background-color: var(--color-blue);
+    }
+
+    .brand-name h2{
+        font-size: 8vw;
+        margin-left: 0.6rem;
+      }
+  
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 90px);
+      background-color: #FFF6D8;
+      display: none;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+    }
+  
+    .navigation-menu li a {
+      font-size: larger;
+      color: #AB8860;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: #fceebe;
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+      z-index: 4;
+    }
+
+    .navigation{
+      height: 70px;
+    }
+
+    .brand-name img{
+      width: 80px;
+      height: auto;
+    }
+  }
+  
