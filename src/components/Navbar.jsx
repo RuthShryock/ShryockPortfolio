@@ -8,15 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <a href="/about" className="brand-name">
-        <img src="/logo.png" alt="logo"/>
-      </a>
       <button
         className="hamburger"
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}>
-        <FontAwesomeIcon icon={faBars}/>
+        <FontAwesomeIcon icon={faBars} className="dropbtn"/>
       </button>
       <div
         className={
@@ -25,16 +22,13 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/about">about</a>
+            <a href="/about">home</a>
           </li>
           <li>
             <a href="/projects">projects</a>
           </li>
           <li>
             <a href="/art">art</a>
-          </li>
-          <li>
-            <a href="/resume">resume</a>
           </li>
         </ul>
       </div>

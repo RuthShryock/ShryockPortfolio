@@ -2,24 +2,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 90px;
     width: 100%;
     padding: 0.8rem 0rem;
+    background-color: #000;
+    color: #fff;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
     border-radius: 10px;
-  }
-  
-  .brand-name {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1.3rem;
-    margin-left: 0.8rem;
-  }
-
-  .brand-name img{
-    width: 80px;
-    height: auto;
+    z-index: 6;
   }
   
   .navigation-menu {
@@ -40,41 +30,40 @@
   .navigation-menu li a {
     font-size: 2vw;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
+    color: var(--color-yellow);
     display: block;
     width: 100%;
   }
 
   .navigation-menu li a:hover {
-    color: #d7a976;
+    color: var(--color-blue);
   } 
   
   .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-light-green);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    color: var(--color-dark-green);
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
     display: none;
+    font-size: larger;
+  }
+  
+  .hamburger:hover {
+    background-color: var(--color-blue);
   }
   
   @media screen and (max-width: 600px) {
     .hamburger {
       display: block;
-      border: 0;
-      height: 40px;
-      width: 40px;
-      padding: 0.5rem;
-      border-radius: 50%;
-      background-color: #AB8860;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out;
-      color: #FFF6D8;
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      transform: translateY(-50%);
-      font-size: 7vw;
-    }
-
-    .hamburger:hover {
-      background-color: var(--color-blue);
     }
 
     .brand-name h2{
@@ -89,7 +78,7 @@
       left: 0;
       width: 100%;
       height: calc(100vh - 90px);
-      background-color: #FFF6D8;
+      background-color: var(--color-light-green);
       display: none;
     }
   
@@ -100,13 +89,13 @@
   
     .navigation-menu li a {
       font-size: larger;
-      color: #AB8860;
+      color: var(--color-dark-green);
       width: 100%;
       padding: 1.5rem 0;
     }
   
     .navigation-menu li:hover {
-      background-color: #fceebe;
+      background-color: var(--color-yellow);
     }
   
     .navigation-menu.expanded ul {
