@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects/Projects";
 import reportWebVitals from './reportWebVitals';
-import Resume from "./pages/Resume/Resume";
 import ReactDOM from 'react-dom/client';
 import About from "./pages/About/About";
 import Art from "./pages/Art/Art";
@@ -17,7 +16,6 @@ root.render(
       <Route path="/about" element={<About/>} />
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/art" element={<Art/>}/>
-      <Route path="/resume" element={<Resume/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

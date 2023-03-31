@@ -4,7 +4,7 @@
     bottom: 0;
     width: 23vw;
     height: auto;
-} */
+}
 
 .dots{
     position: absolute;
@@ -35,17 +35,21 @@
     width: 20vw;
     height: auto;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -40%);
 }
 
-.about h3{
-    font-family: "Courier Prime";
-    font-size: 2.5vw;
+.nameInfo {
     text-align: center;
     position: relative;
-    top: 63vh;
+    margin-top: 48vh;
+}
+
+.nameInfo h3{
+    font-family: "Courier Prime";
+    font-size: 2.5vw;
+    margin-top: 1vh;
 }
 
 .icon{
@@ -53,19 +57,30 @@
     font-size: 2.5vw;
     border: none;
     text-decoration: none;
-    padding: 1% 1% 1% 1%;
-    position: relative;
-    left: 44%;
-    top: 62vh;
+    padding: 0% 1% 0% 1%;
 }
+
 .icon:hover{
     color: #B48846;
 }
 
 .resume{
-    position: relative;
-    top: 62vh;
-    left: 36%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Courier Prime";
+    color: black;
+    background-color: #B48846;
+    border-radius: 30px;
+    font-size: 2vw;
+    width: 180px;
+    height: 50px;
+    margin-top: 2vh;
+}
+
+.resume:hover{
+    background-color: black;
+    color: white;
 }
 
 /* For mobile phones: */

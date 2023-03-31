@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "../../components/Navbar";
 import {Modal, Box} from '@mui/material'; 
 import React, {useState} from 'react';
 import './Art.css';
@@ -124,28 +125,15 @@ const Art = () => {
 
     return (
         <div className="art">
-             <div className="top-bar">
-                <div className="logo"><a href='/about'><img src="/logo.png" alt='logo'/></a></div>
-                <div className="grid-container">
-                    <div className="grid-child"><button type="button"><a href="/about">about</a></button></div>
-                    <div className="grid-child"><button type="button"><a href="/projects">projects</a></button></div>
-                    <div className="grid-child"><button type="button" id="active"><a href="/art">art</a></button></div>
-                    <div className="grid-child"><button type="button"><a href="/resume">resume</a></button></div>
-                </div>
-                <div className="dropdown">
-                    <button>
-                        <FontAwesomeIcon icon={faBars} className="dropbtn"/>
-                    </button>
-                    <div className="dropdown-content">
-                        <a href="/about">about</a>
-                        <a href="/projects">projects</a>
-                        <a href="/art">art</a>
-                        <a href="/resume">resume</a>
-                    </div>
-                </div>
+            <Navbar></Navbar>
+            <div className="background">
+                <img className="lines" src="lines.png" alt="decor"/>
+                <img className="dots" src="dots.png" alt="decor"/>
+                <img className="flowerOne" src="flowerTwo.png" alt="decor"/>
+                <img className="flowerTwo" src="flowers.png" alt="decor"/>
             </div>
             <div className="bodyArt">
-                <h2>some of my hobbies</h2>
+                {/* <h2>some of my hobbies</h2> */}
                 <div className="gridArt">
                     {artImages.map((e,i) => 
                         <div className="outerChild" onClick={() => {setOpenModal(true); setImagesrc(e.photo); setImgdescp(e.text)}} >
@@ -155,7 +143,7 @@ const Art = () => {
                             
                         </div>
                     )}
-                    <Modal
+                    {/* <Modal
                         open={openModal === true}
                         onClose={() => setOpenModal(false)}
                         disableAutoFocus={true}
@@ -168,7 +156,7 @@ const Art = () => {
                         </button>
                         <img id="modalImage" src={imgsrc} alt={imgdescp}></img>
                         </Box>
-                    </Modal>
+                    </Modal> */}
 
                 </div>
             </div>

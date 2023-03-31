@@ -1,42 +1,19 @@
-.art button {
-    all: unset;
-    cursor: pointer;
-    padding: 2% 7% 2% 7%;
+.art{
+    overflow: hidden;
 }
-.art button:hover{
-    background-color: #FFEFBA;
-    border-radius: 10px;
+
+.bodyArt{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: auto;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
 }
-.art a {
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
-    font-size: 2vw;
-    border: none;
-    text-decoration: none;
-}
-.art img {
-    top: 0px;
-    left: 5%;
-    width: 30%;
-}
-.art h2{
-    font-family: "Parisienne";
-    font-size: 3vw;
-    color: #AB8860;
-    text-align: center;
-    margin-top: -1%;
-}
-.dropdown-content a {
-    font-size: 5vw;
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    padding-left: 0%;
-    transition: all 0.5s ease;
-}
+
 .gridArt{
+    margin-top: 2%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     margin-left: 5%;
