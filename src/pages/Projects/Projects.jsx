@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from "../../components/Navbar";
 import React from 'react';
 import './Projects.css';
