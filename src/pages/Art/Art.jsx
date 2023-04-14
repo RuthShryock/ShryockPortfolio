@@ -3,6 +3,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Navbar from "../../components/Navbar";
 import {Modal, Box} from '@mui/material'; 
 import React, {useState} from 'react';
+import { Gallery } from "react-grid-gallery";
 import './Art.css';
 
 const Art = () => {

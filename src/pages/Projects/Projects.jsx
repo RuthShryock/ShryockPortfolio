@@ -6,23 +6,23 @@ import './Projects.css';
 const Projects = () => {
     const projectLogos = [{
         photo: "/growth.png",
-        text:"ex"
+        text:"Growth+"
     },
     {
         photo: "/pantry.png",
-        text:"ex"
+        text:"Pantry"
     },
     {
         photo: "/dockerhound.png",
-        text: "ex"
+        text: "Dockerhound"
     },
     {
         photo: "/kg.png",
-        text: "ex"
+        text: "Knightro's Gambit"
     },
     {
         photo: "/paradisepages.png",
-        text: "ex"
+        text: "Paradise Pages"
     }
     ]
     // const [openModal, setOpenModal] = useState();

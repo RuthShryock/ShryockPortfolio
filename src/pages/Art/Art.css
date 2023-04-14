@@ -3,7 +3,6 @@
 }
 
 .bodyArt{
-    background-color: white;
     border-radius: 20px;
     position: absolute;
     overflow-y: auto;
@@ -26,6 +25,7 @@
     position: relative;
     margin-bottom: 10%;
     cursor: pointer;
+    border-radius: 20px;
 }
 .gridArt-child{
     width: 100%;
