@@ -31,25 +31,25 @@
     height: auto;
 }
 
-.me{
+.vertical-box {
+    display: grid;
+    grid-template-rows: 12vw 9vw 6vw 5vw;
+    text-align: center;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.profile{
     width: 20vw;
     height: auto;
     position: absolute;
-    top: 35%;
-    left: 50%;
+    left: 50%; 
     transform: translate(-50%, -40%);
 }
 
-.nameInfo {
-    text-align: center;
-    position: relative;
-    margin-top: 48vh;
-}
-
-.nameInfo h3{
-    font-family: "Courier Prime";
+.name-text{
+    font-family: "Cardo";
     font-size: 2.5vw;
-    margin-top: 1vh;
 }
 
 .icon{
@@ -61,21 +61,20 @@
 }
 
 .icon:hover{
-    color: #B48846;
+    color: #B66C49;
 }
 
 .resume{
     text-decoration: none;
     border: none;
     cursor: pointer;
-    font-family: "Courier Prime";
+    font-family: "Cardo";
     color: black;
-    background-color: #B48846;
+    background-color: #B66C49;
     border-radius: 30px;
-    font-size: 2vw;
+    font-size: 2.25vw;
     width: 180px;
-    height: 50px;
-    margin-top: 2vh;
+    height: 60px;
 }
 
 .resume:hover{
@@ -84,6 +83,45 @@
 }
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) { 
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
+    }
     
+    .dots{
+        width: 35vw;
+    }
+    
+    .flowerOne {
+        width: 30vw;
+    }
+    
+    .flowerTwo {
+        width: 30vw;
+    }
+
+    .profile{
+        width: 50vw;
+    }
+
+    .vertical-box {
+        margin-top: 20vh;
+        grid-template-rows: 25vw 27vw 20vw 0vw;
+    }
+    
+    .name-text{
+        font-size: 8vw;
+    }
+
+    .icon{
+        font-size: 8vw;
+        padding: 0% 2% 1% 2%;
+    }
+
+    .resume{
+        border-radius: 30px;
+        font-size: 20px;
+        width: 100px;
+        height: 35px;
+    }
 } 
