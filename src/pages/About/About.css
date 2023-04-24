@@ -125,3 +125,46 @@
         height: 35px;
     }
 } 
+/* For mobile phones: */
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
+    }
+    
+    .dots{
+        width: 35vw;
+    }
+    
+    .flowerOne {
+        width: 30vw;
+    }
+    
+    .flowerTwo {
+        width: 30vw;
+    }
+
+    .profile{
+        width: 50vw;
+    }
+
+    .vertical-box {
+        margin-top: 20vh;
+        grid-template-rows: 25vw 27vw 20vw 0vw;
+    }
+    
+    .name-text{
+        font-size: 8vw;
+    }
+
+    .icon{
+        font-size: 8vw;
+        padding: 0% 2% 1% 2%;
+    }
+
+    .resume{
+        border-radius: 30px;
+        font-size: 20px;
+        width: 100px;
+        height: 35px;
+    }
+} 

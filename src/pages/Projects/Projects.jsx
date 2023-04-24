@@ -24,9 +24,7 @@ const Projects = () => {
         text: "Paradise Pages"
     }
     ]
-    // const [openModal, setOpenModal] = useState();
-    // const [imgsrc, setImagesrc] = useState();
-    // const [imgdescp, setImgdescp] = useState();
+
 
     return (
         <div className="projects">
@@ -65,7 +63,9 @@ const Projects = () => {
                     </Modal> */}
 
                 </div>
-        </div>  
+        </div>   
+        
+
     </div>  
     )
 };

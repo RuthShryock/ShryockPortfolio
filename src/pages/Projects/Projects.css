@@ -38,7 +38,26 @@
     border-radius: 20px;
     transition: transform 500ms ease;
 }
+
 /* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
+    }
     
-}
+    .dots{
+        width: 35vw;
+    }
+    
+    .flowerOne {
+        width: 30vw;
+    }
+    
+    .flowerTwo {
+        width: 30vw;
+    }
+
+    .projects{
+        overflow: visible;
+    }
+} 

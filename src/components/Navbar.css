@@ -72,7 +72,7 @@
       top: 60px;
       left: 0;
       width: 100%;
-      height: calc(100vh - 60px);
+      height: calc(100vh - 80px);
       background-color: #fdf5f2d7;
       display: none;
       z-index: 6;
@@ -97,7 +97,6 @@
   
     .navigation-menu.expanded ul {
       display: block;
-      z-index: 4;
     }
 
     .navigation{
