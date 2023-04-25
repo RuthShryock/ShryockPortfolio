@@ -1,55 +1,39 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "../../components/Navbar";
 import React from 'react';
 import './Projects.css';
 
 const Projects = () => {
     const projectLogos = [{
         photo: "/growth.png",
-        text:"ex"
+        text:"Growth+"
     },
     {
         photo: "/pantry.png",
-        text:"ex"
+        text:"Pantry"
     },
     {
         photo: "/dockerhound.png",
-        text: "ex"
+        text: "Dockerhound"
     },
     {
         photo: "/kg.png",
-        text: "ex"
+        text: "Knightro's Gambit"
     },
     {
         photo: "/paradisepages.png",
-        text: "ex"
+        text: "Paradise Pages"
     }
     ]
-    // const [openModal, setOpenModal] = useState();
-    // const [imgsrc, setImagesrc] = useState();
-    // const [imgdescp, setImgdescp] = useState();
+
 
     return (
         <div className="projects">
-             <div className="top-bar">
-                <div className="logo"><a href='/about'><img src="/logo.png" alt='logo'/></a></div>
-                <div className="grid-container">
-                    <div className="grid-child"><button type="button"><a href="/about">about</a></button></div>
-                    <div className="grid-child"><button type="button" id="active"><a href="/projects">projects</a></button></div>
-                    <div className="grid-child"><button type="button"><a href="/art">art</a></button></div>
-                    <div className="grid-child"><button type="button"><a href="/resume">resume</a></button></div>
-                </div>
-                <div className="dropdown">
-                    <button>
-                        <FontAwesomeIcon icon={faBars} className="dropbtn"/>
-                    </button>
-                    <div className="dropdown-content">
-                        <a href="/about">about</a>
-                        <a href="/projects">projects</a>
-                        <a href="/art">art</a>
-                        <a href="/resume">resume</a>
-                    </div>
-                </div>
+            <Navbar></Navbar>
+            <div className="background">
+                <img className="lines" src="lines.png" alt="decor"/>
+                <img className="dots" src="dots.png" alt="decor"/>
+                <img className="flowerOne" src="flowerTwo.png" alt="decor"/>
+                <img className="flowerTwo" src="flowers.png" alt="decor"/>
             </div>
             <div className="bodyProject">
                 <div className="gridProjects">
@@ -79,7 +63,9 @@ const Projects = () => {
                     </Modal> */}
 
                 </div>
-        </div>  
+        </div>   
+        
+
     </div>  
     )
 };

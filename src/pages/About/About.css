@@ -1,169 +1,170 @@
-.about button {
-    all: unset;
-    cursor: pointer;
-    padding: 2% 7% 2% 7%;
-}
-.about button:hover{
-    background-color: #FFEFBA;
-    border-radius: 10px;
-}
-#active{
-    background-color: #FFEFBA;
-    border-radius: 10px; 
-}
-.about a {
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
-    font-size: 2vw;
-    border: none;
-    text-decoration: none;
-}
-.grid-container{
-    display: grid;
-    margin-right: 0%;
-    margin-left: 55%;
-    padding-right: 5%;
-    padding-top: 2%;
-    grid-template-columns: auto auto auto auto;
-}
-.grid-child{
-    text-align: center;
-}
-.about img {
-    top: 0px;
-    left: 5%;
-    width: 30%;
-}
-.top-bar{
-    display: grid;
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-right: 2%;
-    grid-template-columns: 20% 80%;
-}
-.body-grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left:  17%;
-    margin-right: 17%;
-    margin-top: 2%;
-}
-#profile{
-    border-radius: 20px;
-    width: 75%;
-    margin: auto;
-    display: block;
-}
-.body-child1{
-    text-align: center;
-    margin-top: 20%;
-}
-.about h2{
-    font-family: "Parisienne";
-    font-size: 4vw;
-    color: #AB8860;
-    margin-bottom: 1%;
-}
-.about h3 {
-    padding-top: -3%;
-    color: #DBB391;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5vw;
-    font-weight: lighter;
-}
-#icon{
-    color: #d7a976;
-    font-size: 1.7vw;
-    border: none;
-    text-decoration: none;
-    padding: 1.5% 1.5% 1.5% 1.5%;
-}
-#icon:hover{
-    color: #AB8860;
-}
-.dropbtn{
-    display: none;
-    color: #AB8860;
-    font-size: 7vw;
-    border: none;
-    text-decoration: none;
-    padding: 1.5% 1.5% 1.5% 1.5%;
-}
-.dropdown{
-    margin-top: 6%;
-    margin-right: 0%;
-    margin-left: 55%;
-}
-.dropdown-content {
-    display: none;
+.lines{
     position: absolute;
-    background-color: #FFF6D8;
-    border-radius: 10px;
-    min-width: 7vw;
-    padding: 4% 1.5% 1.5% 1.5%;
+	right: 0;
+    bottom: 0;
+    width: 23vw;
+    height: auto;
 }
-.dropdown-content a {
-    font-size: 5vw;
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
+
+.dots{
+    position: absolute;
+	top: 0;
+	left: 0;
+    width: 17vw;
+    height: auto;
+}
+
+.flowerOne {
+    position: absolute;
+	top: 0;
+	right: 0;
+    width: 15vw;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+.flowerTwo {
+    position: absolute;
+	left: 0;
+    bottom: 0;
+    width: 15vw;
+    height: auto;
+}
+
+.vertical-box {
+    display: grid;
+    grid-template-rows: 12vw 9vw 6vw 5vw;
+    text-align: center;
+    position: relative;
+    margin-top: 20vh;
+}
+
+.profile{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -40%);
+}
+
+.name-text{
+    font-family: "Cardo";
+    font-size: 2.5vw;
+}
+
+.icon{
+    color: #000;
+    font-size: 2.5vw;
+    border: none;
     text-decoration: none;
-    display: block;
+    padding: 0% 1% 0% 1%;
+}
+
+.icon:hover{
+    color: #B66C49;
+}
+
+.resume{
+    text-decoration: none;
+    border: none;
     cursor: pointer;
-    padding-left: 0%;
-    transition: all 0.5s ease;
+    font-family: "Cardo";
+    color: black;
+    background-color: #B66C49;
+    border-radius: 30px;
+    font-size: 2.25vw;
+    width: 180px;
+    height: 60px;
 }
-.dropdown-content a:active {
-    padding-left: 8px;
-    border-left: 2px solid #AB8860;
-    color: #DBB391;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
+
+.resume:hover{
+    background-color: black;
+    color: white;
 }
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) { 
-    .dropbtn{
-        display: block;
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
     }
-    .grid-container{
-        display: none;
+    
+    .dots{
+        width: 35vw;
     }
-    .top-bar{
-        display: grid;
-        padding-top: 4%;
-        grid-template-columns: 50% 50%;
+    
+    .flowerOne {
+        width: 30vw;
     }
-    .about img {
-        width: 30%;
-        margin-left: 2%;
+    
+    .flowerTwo {
+        width: 30vw;
     }
-    .body-grid{
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 100%;
+
+    .profile{
+        width: 50vw;
     }
-    .body-child2{
-        padding-top: 8%;
-        grid-row: 1;
+
+    .vertical-box {
+        margin-top: 20vh;
+        grid-template-rows: 25vw 27vw 20vw 0vw;
     }
-    .body-child1{
-        padding-top: 7%;
-        grid-row: 2;
+    
+    .name-text{
+        font-size: 8vw;
     }
-    .about h2{
-        font-size: 10vw;
-        margin-bottom: 1%;
-        margin-top: -5%;
+
+    .icon{
+        font-size: 8vw;
+        padding: 0% 2% 1% 2%;
     }
-    .about h3 {
-        padding-top: -1%;
-        font-size: 3.8vw;
+
+    .resume{
+        border-radius: 30px;
+        font-size: 20px;
+        width: 100px;
+        height: 35px;
     }
-    #icon{
-        font-size: 6vw;
+} 
+/* For mobile phones: */
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
     }
-    .about button:hover{
-        background-color: #FFF6D8;
-        border-radius: 10px;
+    
+    .dots{
+        width: 35vw;
     }
-}
+    
+    .flowerOne {
+        width: 30vw;
+    }
+    
+    .flowerTwo {
+        width: 30vw;
+    }
+
+    .profile{
+        width: 50vw;
+    }
+
+    .vertical-box {
+        margin-top: 20vh;
+        grid-template-rows: 25vw 27vw 20vw 0vw;
+    }
+    
+    .name-text{
+        font-size: 8vw;
+    }
+
+    .icon{
+        font-size: 8vw;
+        padding: 0% 2% 1% 2%;
+    }
+
+    .resume{
+        border-radius: 30px;
+        font-size: 20px;
+        width: 100px;
+        height: 35px;
+    }
+} 

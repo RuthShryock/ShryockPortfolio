@@ -1,55 +1,63 @@
-.projects button {
-    all: unset;
-    cursor: pointer;
-    padding: 2% 7% 2% 7%;
+.projects{
+    overflow: hidden;
 }
-.projects button:hover{
-    background-color: #FFEFBA;
-    border-radius: 10px;
+
+.bodyProject{
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    overflow-y: auto;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
 }
-.projects a {
-    font-family: 'Times New Roman', Times, serif;
-    color: #AB8860;
-    font-size: 2vw;
-    border: none;
-    text-decoration: none;
-}
-.projects img {
-    top: 0px;
-    left: 5%;
-    width: 30%;
-}
+
 .gridProjects{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: 50% 50%;
     margin-left: 5%;
     padding: 2% 2% 2% 2%;
 }
 .outerPChild{
-    width: 18vw;
-    height: 18vw;
+    width: 35vw;
+    height: 20vw;
     overflow: hidden;
     position: relative;
     margin-bottom: 10%;
     cursor: pointer;
+    background-color: #cdb187;
+    border-radius: 20px;
 }
 .gridProject-child{
     width: 100%;
     height: 100%;
+    display: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
     transition: transform 500ms ease;
 }
+
 /* For mobile phones: */
-@media only screen and (max-width: 768px) {
-    .projects button:hover{
-        background-color: #FFF6D8;
-        border-radius: 10px;
+@media screen and (max-width: 600px) {
+    .lines{
+        width: 40vw;
     }
-    .projects img {
-        width: 30%;
-        margin-left: 2%;
+    
+    .dots{
+        width: 35vw;
     }
-}
+    
+    .flowerOne {
+        width: 30vw;
+    }
+    
+    .flowerTwo {
+        width: 30vw;
+    }
+
+    .projects{
+        overflow: visible;
+    }
+} 

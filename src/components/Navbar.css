@@ -1,0 +1,107 @@
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 0.8rem 0rem;
+    color: black;
+    z-index: 6;
+    font-family: "Cardo";
+  }
+  
+  .navigation-menu {
+    margin-left: auto;
+    margin-right: 12rem;
+  }
+  
+  .navigation-menu ul {
+    display: flex;
+    padding: 0;
+  }
+  
+  .navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+    padding: 5px 25px 5px 25px;
+    border-radius: 30px;
+  }
+  
+  .navigation-menu li a {
+    font-size: 2vw;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+
+  .navigation-menu li:hover {
+    background-color: #B66C49;
+  } 
+  
+  .hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translateY(-50%);
+    display: none;
+    font-size: larger;
+  }
+  
+  .hamburger:hover {
+    background-color: #B66C49;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .hamburger {
+      display: block;
+    }
+
+    .navigation-menu ul {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: #fdf5f2d7;
+      display: none;
+      z-index: 6;
+    }
+  
+    .navigation-menu li {
+      text-align: center;
+      margin: 0;
+      border-radius: 0px;
+    }
+  
+    .navigation-menu li a {
+      font-size: larger;
+      color: black;
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+  
+    .navigation-menu li:hover {
+      background-color: #B66C49;
+    }
+  
+    .navigation-menu.expanded ul {
+      display: block;
+    }
+
+    .navigation{
+      height: 70px;
+    }
+
+  }
+  
