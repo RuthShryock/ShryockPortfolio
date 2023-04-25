@@ -95,3 +95,26 @@ input[type="checkbox"]:checked + .lightbox {
   transform: scale(1);
 }
 input[type="checkbox"]:checked ~ .grid { opacity: .125; }
+
+/* For mobile phones: */
+@media screen and (max-width: 600px) {
+  .lines{
+      width: 40vw;
+  }
+  
+  .dots{
+      width: 35vw;
+  }
+  
+  .flowerOne {
+      width: 30vw;
+  }
+  
+  .flowerTwo {
+      width: 30vw;
+  }
+
+  .art{
+      overflow: visible;
+  }
+} 
