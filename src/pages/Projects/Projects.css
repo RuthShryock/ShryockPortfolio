@@ -3,13 +3,13 @@
 }
 
 .bodyProject{
-    background-color: white;
     border-radius: 20px;
     position: absolute;
     overflow-y: auto;
     width: 90%;
     height: 80%;
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 .gridProjects{
@@ -18,31 +18,80 @@
     margin-left: 5%;
     padding: 2% 2% 2% 2%;
 }
+
 .outerPChild{
     width: 35vw;
-    height: 20vw;
+    height: 22vw;
     overflow: hidden;
     position: relative;
     margin-bottom: 10%;
     cursor: pointer;
-    background-color: #cdb187;
+    background-color: #d0a89d;
     border-radius: 20px;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
+
 .gridProject-child{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: "Cardo";
+}
+
+.pic{
+    opacity: 0.9;
     width: 100%;
     height: 100%;
-    display: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    transition: transform 500ms ease;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+}
+
+.childGrid{
+    width: 85%;
+    height: 100%;
+    align-self: center;
+    margin-left: 9%;
+    text-align: center;
+}
+
+.weblink{
+    border: none;
+    text-decoration: none;
+    color:#573322;
+    cursor: pointer;
+}
+
+.miniGrid{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.descp{
+    font-family: "Cardo";
+    font-size: 1.35vw;
+    color: #fff8f6;
+    margin-right: 2%;
+}
+
+.icons{
+    color: #B66C49;
+    font-size: 2vw;
+    border: none;
+    text-decoration: none;
+    padding: 0% 1.5% 0% 1.5%;
+}
+
+.icons:hover{
+    color: #fff;
 }
 
 /* For mobile phones: */
 @media screen and (max-width: 600px) {
     .lines{
-        width: 40vw;
+        width: 28vw;
     }
     
     .dots{
@@ -50,14 +99,39 @@
     }
     
     .flowerOne {
-        width: 30vw;
+        width: 16vw;
+        height: auto;
     }
     
     .flowerTwo {
-        width: 30vw;
+        width: 16vw;
+        height: auto;
     }
 
     .projects{
         overflow: visible;
     }
+
+    .gridProjects{
+        grid-template-columns: 100%;
+        margin-left: 2%; 
+    }
+
+    .outerPChild{
+        width: 80vw;
+        height: 55vw;
+    }
+
+    .gridProject-child{
+        margin-top: 4%;
+        font-size: 6vw;
+    }
+    
+    .descp{
+        font-size: 3.3vw;
+    }
+    
+    .icons{
+        font-size: 6vw;
+    }    
 } 

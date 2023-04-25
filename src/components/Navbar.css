@@ -4,7 +4,7 @@
     align-items: center;
     height: 90px;
     width: 100%;
-    padding: 0.8rem 0rem;
+    padding-top: 3vh;
     color: black;
     z-index: 6;
     font-family: "Cardo";
@@ -28,7 +28,7 @@
   }
   
   .navigation-menu li a {
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-decoration: none;
     display: block;
     width: 100%;
