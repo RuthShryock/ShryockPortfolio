@@ -1,4 +1,4 @@
-import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
+import {faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -24,7 +24,7 @@ const About = () => {
                 <div className="clickable-icons">
                     <a href='https://www.linkedin.com/in/ruth-shryock/' target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faLinkedin}/></a>
                     <a href='https://github.com/RuthShryock'target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faGithubSquare}/></a>
-                    <a href='https://www.instagram.com/ruthie_shryock/' target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faInstagramSquare}/></a>
+                    <a href='mailto:ruthieshryock@gmail.com' target="_blank" rel="noopener noreferrer" className='icon'><FontAwesomeIcon icon={faEnvelopeSquare}/></a>
                 </div>
                 <div className="resume-btn"><a href={ShryockResume} target="_blank" rel="noreferrer"><button className="resume">resume</button></a></div>
             </div> 
