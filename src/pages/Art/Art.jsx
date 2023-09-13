@@ -36,14 +36,19 @@ const Art = () => {
                     <label for="pic-20" class="grid-item"><img src="/17.jpg"alt="artwork"/></label>
                     <label for="pic-21" class="grid-item"><img src="/18.jpg"alt="artwork"/></label>
                     <label for="pic-22" class="grid-item"><img src="/19.jpg"alt="artwork"/></label>
-                    <label for="pic-23" class="grid-item"><img src="/30.jpg"alt="artwork"/></label> 
-                    <label for="pic-24" class="grid-item"><img src="/20.jpg"alt="artwork"/></label>
-                    <label for="pic-25" class="grid-item"><img src="/26.jpg"alt="artwork"/></label>
+                    <label for="pic-23" class="grid-item"><img src="/30.jpg"alt="artwork"/></label>
+                    <label for="pic-24" class="grid-item"><img src="/31.jpg"alt="artwork"/></label>
+                    <label for="pic-25" class="grid-item"><img src="/32.jpg"alt="artwork"/></label>  
                     <label for="pic-26" class="grid-item"><img src="/21.jpg"alt="artwork"/></label>
-                    <label for="pic-27" class="grid-item"><img src="/22.jpg"alt="artwork"/></label>
-                    <label for="pic-28" class="grid-item"><img src="/23.jpg"alt="artwork"/></label>
-                    <label for="pic-29" class="grid-item"><img src="/24.jpg"alt="artwork"/></label>
-                    <label for="pic-30" class="grid-item"><img src="/29.jpg"alt="artwork"/></label>
+                    <label for="pic-27" class="grid-item"><img src="/26.jpg"alt="artwork"/></label>
+                    <label for="pic-28" class="grid-item"><img src="/20.jpg"alt="artwork"/></label>
+                    <label for="pic-29" class="grid-item"><img src="/33.jpg"alt="artwork"/></label>
+                    <label for="pic-30" class="grid-item"><img src="/22.jpg"alt="artwork"/></label>
+                    <label for="pic-31" class="grid-item"><img src="/23.jpg"alt="artwork"/></label>
+                    <label for="pic-32" class="grid-item"><img src="/24.jpg"alt="artwork"/></label>
+                    <label for="pic-33" class="grid-item"><img src="/29.jpg"alt="artwork"/></label>
+                    <label for="pic-34" class="grid-item"><img src="/34.jpg"alt="artwork"/></label>
+                    <label for="pic-35" class="grid-item"><img src="/35.jpg"alt="artwork"/></label>
                 </div>
                 <input type="checkbox" id="pic-1"/>
                 <label for="pic-1" class="lightbox"><img src="/1.jpg"alt="artwork"/></label>
@@ -92,19 +97,29 @@ const Art = () => {
                 <input type="checkbox" id="pic-23"/>
                 <label for="pic-23" class="lightbox"><img src="/30.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-24"/>
-                <label for="pic-24" class="lightbox"><img src="/20.jpg"alt="artwork"/></label>
+                <label for="pic-24" class="lightbox"><img src="/31.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-25"/>
-                <label for="pic-25" class="lightbox"><img src="/26.jpg"alt="artwork"/></label>
+                <label for="pic-25" class="lightbox"><img src="/32.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-26"/>
                 <label for="pic-26" class="lightbox"><img src="/21.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-27"/>
-                <label for="pic-27" class="lightbox"><img src="/22.jpg"alt="artwork"/></label>
+                <label for="pic-27" class="lightbox"><img src="/26.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-28"/>
-                <label for="pic-28" class="lightbox"><img src="/23.jpg"alt="artwork"/></label>
+                <label for="pic-28" class="lightbox"><img src="/20.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-29"/>
-                <label for="pic-29" class="lightbox"><img src="/24.jpg"alt="artwork"/></label>
+                <label for="pic-29" class="lightbox"><img src="/33.jpg"alt="artwork"/></label>
                 <input type="checkbox" id="pic-30"/>
-                <label for="pic-30" class="lightbox"><img src="/29.jpg"alt="artwork"/></label>
+                <label for="pic-30" class="lightbox"><img src="/22.jpg"alt="artwork"/></label>
+                <input type="checkbox" id="pic-31"/>
+                <label for="pic-31" class="lightbox"><img src="/23.jpg"alt="artwork"/></label>
+                <input type="checkbox" id="pic-32"/>
+                <label for="pic-32" class="lightbox"><img src="/24.jpg"alt="artwork"/></label>
+                <input type="checkbox" id="pic-33"/>
+                <label for="pic-33" class="lightbox"><img src="/29.jpg"alt="artwork"/></label>
+                <input type="checkbox" id="pic-34"/>
+                <label for="pic-34" class="lightbox"><img src="/34.jpg"alt="artwork"/></label>
+                <input type="checkbox" id="pic-35"/>
+                <label for="pic-35" class="lightbox"><img src="/35.jpg"alt="artwork"/></label>
             </div>
         </div>   
     )
