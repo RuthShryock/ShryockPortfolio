@@ -8,7 +8,7 @@ const Projects = () => {
     const projectLogos = [{
         photo: "/growth.png",
         text:"Growth+",
-        link: "https://growthplus4a.org",
+        link: "https://growthplus4a.netlify.app",
         github: "https://github.com/ucfcs/GrowthPlus",
         about: "math application for children in Africa",
         role: "project manager",
