@@ -59,7 +59,7 @@ const Projects = () => {
     {
         photo: "/logo.png", 
         text: "Portfolio", 
-        link: "https://ruthshryock.com",
+        link: "https://ruthshryock.netlify.app",
         github: "https://github.com/RuthShryock/ShryockPortfolio",
         about: "personal portfolio website",
         role: "creator/developer",
